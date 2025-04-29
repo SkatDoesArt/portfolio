@@ -1,0 +1,310 @@
+/*Le bordel*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: ghostwhite;
+    list-style-type: none;
+}
+
+body *{
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+
+* li#prix {
+    color:red;
+}
+
+* li#nom{
+    font-size:large;
+    font-weight:bold;
+}
+
+        * p#price {
+    color:red;
+}
+
+* button:hover {
+    color:ghostwhite;
+    opacity: 0.5;
+}
+
+#page h1 {
+    width:100%;
+    margin: 2%;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+header#main_header {
+    background-color: lightgrey;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid black;
+}
+
+div#page {
+    margin: auto;
+    padding-top: 1%;
+    width: 90%;
+    background-color: white;
+    border: 2px solid lightgrey;
+}
+
+/* Partie pour la liste des magnifiques articles*/
+
+div#contenu_panier {
+    margin-left: 1%;
+    display: inline-block;
+    list-style-type: none;
+    background-color: white;
+    width: 55%;
+    justify-content: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+div#contenu_panier h3 {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    padding:2%;
+}
+
+div#contenu_panier div#article {
+    width: 80%;
+    padding: 20px;
+}
+
+.separator {
+    width: 80%;
+    height: 2px;
+    background-color: lightgrey;
+    margin:2%;
+}
+
+
+div#contenu_panier div#article div#image {
+    display: inline-block;
+    background-color: white;
+    /*max-width: 30%;*/
+    padding: .5%;
+    width: 150px;
+    height: 150px;
+}
+
+div#contenu_panier div#article div#image img {
+    max-width: 100%;
+    height: auto;
+    border: solid lightgrey;
+}
+
+div#contenu_panier div#article div#content {
+    display: inline-block;
+    background-color: white;
+    /*width: 45%;*/
+    width: 300px;
+    height: 150px;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 3%;
+    padding: .5%;
+    border: solid;
+    border-color: lightgrey;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+div#contenu_panier div#article div#content ul {
+    list-style-type: none;
+    
+}
+
+div#contenu_panier div#article div#content h5 {
+    color: green;
+}
+
+/* La sidebar des affaires fructueuses */
+
+div#sidebar {
+    margin-top:0;
+    display: inline-block;
+    width: 37%;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* Le menu récap avant de sortir la cb */
+
+div#recap {
+    display: block;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: solid;
+    border-color: lightgrey;
+}
+
+div#recap *{
+    margin:2%;
+    font-size: x-large;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+div#recap h3 {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+div#recap button {
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+div#recap > .separator {
+    width: 95%;
+    height: 2px;
+    background-color: lightgrey;
+    margin:2%;
+}
+
+/* L'autopub du BUSINESS */
+
+div#autres {
+    margin-top:15%;
+    display: block;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: solid;
+    border-color: lightgrey;
+}
+
+div#autres *{
+    margin:2%;
+    font-size: x-large;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+div#autres h3 {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+div#autres button {
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+div#autres .separator {
+    width: 95%;
+    height: 2px;
+    background-color: lightgrey;
+    margin:2%;
+}
+
+div#autres div#article div#image {
+    display: inline-block;
+    background-color: white;
+    /*max-width: 30%;*/
+    padding: .5%;
+    width: 150px;
+    height: 150px;
+}
+
+div#autres div#article div#image img {  
+    max-width: 100%;
+    height: auto;
+    border: solid lightgrey;
+}
+
+div#autres div#article div#content {
+    display: inline-block;
+    background-color: white;
+    /*width: 45%;*/
+    width: 300px;
+    height: 150px;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 3%;
+    padding: .5%;
+    border: solid;
+    border-color: lightgrey;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+div#autres div#article div#content li#nom{
+    font-size:large;
+    font-weight:bold;
+}
+
+div#autres div#article div#content ul {
+    list-style-type: none;
+    
+}

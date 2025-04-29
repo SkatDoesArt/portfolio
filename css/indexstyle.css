@@ -1,0 +1,470 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+    transition: 0.5s;
+}
+
+/* parallax -> acceuil ( sacha )*/
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallaxbackground {
+    z-index: 1;
+}
+
+.parallaxfront {
+    z-index: 2;
+}
+
+#text {
+    position: relative;
+    font-size: 5vw;
+    color: #0C0C0C;
+    font-family: "Bungee Hairline", sans-serif;
+    margin-top: 10%;
+    margin-left: 2%;
+    z-index: 3;
+}
+
+#link {
+    position: relative;
+    margin-top: 5%;
+    transform: translateY(100px);
+    font-size: 2vw;
+    color: #0C0C0C !important;
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #e9e9e9;
+    border-radius: 50px;
+    box-shadow: 0px 10px 30px -5px rgba(122, 122, 122, 0.2);
+    padding-left: 2%;
+    padding-right: 2%;
+    z-index: 3;
+    transition: letter-spacing 0.3s ease;
+}
+
+#link:hover {
+    color: rgba(110, 110, 110, 0.377) !important;
+    letter-spacing: 0.05rem;
+}
+
+div#haut {
+    display: flex;
+    max-height: 20%;
+    align-items: center;
+}
+
+div#droite, div#gauche {
+    display: flex;
+    width: 12%;
+    margin: 0; 
+    padding: 0; 
+}
+div#droite{
+    justify-content: end;
+}
+div#gauche{
+    justify-content: start;
+}
+div#droite > img, div#gauche > img {
+    width: 50%;
+    height: 1020px;
+    filter: var(--inverse);
+}
+
+
+div#milieu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#bas {
+    display: flex;
+    margin-top: 7%;
+}
+
+div#basdroite, div#basgauche {
+    display: flex;
+    width: 10%;
+    margin: 0; 
+    padding: 0; 
+}
+
+div#basdroite {
+    justify-content: end;
+}
+
+div#basdroite img, div#basgauche img {
+    width: 66%;
+    filter: var(--inverse);
+}
+
+/* Body */
+div#body {
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 75%;
+    height: 20%;
+
+}
+
+#body p {
+    font-size: x-large;
+    line-height: 1.2;
+    font-style: normal;
+    margin: 0%;
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: var(--text-color);
+    
+}
+#lore{
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 2;
+}
+
+
+/* Card ( sacha ) */
+
+#perso {
+    /* margin-top: 5%; */
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light2);
+
+}
+
+#explication {
+    padding-top: 0%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#explication > #titreperso {
+    color: var(--text-color);
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 2;
+}
+
+#explication > .textexplicatif {
+
+    padding: 20px;
+    font-size: x-large;
+    line-height: 1.3;
+    font-style: normal;
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0; 
+}
+
+.container {
+    height: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 65%; 
+}
+
+label.card {
+    width: 6%;
+    height: 140%;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: var(--card-shadow);
+}
+
+.card > .row {
+    color: #0c0c0c;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .Icon {
+    display: none;
+}
+
+.card > .row > .desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 100vh;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+    padding-left: 3%;
+    background-color: #0c0c0c98;
+}
+.card input:checked + label {
+    width: 60%;
+}
+.card:hover {
+    width: 60% !important;
+    transition: 1s;
+}
+
+.card:hover .desc {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: 1s;
+}
+.card input:not(:checked):hover + label .desc {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: 1s;
+}
+.desc p{
+    font-size: large;
+    font-style: bold;
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    color:#f5f5f5;
+}
+.desc h4{
+    font-size: large;
+    font-style: normal;
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    color: #ffffff;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 60%;
+}
+
+input:checked + label .desc {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url(../reference/imgs/cards/album.jpg);
+}
+
+.card[for="c2"] {
+    background-image: url(../reference/imgs/cards/sis.png);
+}
+
+.card[for="c3"] {
+    background-image: url(../reference/imgs/cards/cursebounddd.png);
+}
+
+.card[for="c4"] {
+    background-image: url(../reference/imgs/cards/goGame.png);
+}
+.card[for="c5"] {
+    background-image: url(../reference/imgs/cards/solidworks.png);
+}
+
+/* about us */
+
+#bas{
+    width: 100%;
+}
+#surnous{
+    width: 100%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#surnous > h1{
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 2;
+}
+
+.slider{
+    width: 105vh;
+    max-width: 100vw;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slides{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+.slide > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide > video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.fleche{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.fleche button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(117, 117, 117, 0.308);
+    color: #000000;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.fleche button:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.363);
+}
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #8b8b8b;
+    left: 0;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #8b8b8b;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.active{
+    width: 30px;
+    background-color: #575757;
+}
+
+.dots li:hover{
+    transform: scale(1.1);
+}
+
+.navbar > ul >.cb_logo > a >img:hover{
+    transform: scale(1.1);
+}
+.navbar > ul >.cb_logo > a >img{
+    transition: transform 0.3s ease;
+}
+
+html:not(.lightmode) > body >{
+    color: white;
+}
+
+.navbar ul li a[href="#space-body"], a[href="#explication"], a[href="#bas"], a[href="reference/cv_motiv/cv_motiv_fr_Zahra.zip"] {
+    transition: transform 0.3s ease;
+    transition: letter-spacing 0.3s ease;
+}
+
+.navbar ul li a[href="#space-body"]:hover, a[href="#explication"]:hover, a[href="#bas"]:hover, a[href="reference/cv_motiv/cv_motiv_fr_Zahra.zip"]:hover {
+    transform: scale(1.03);
+    letter-spacing: 0.05rem;
+}
+
+#info p{
+        font-size: x-large;
+        line-height: 1.2;
+        font-style: normal;
+        margin: 0%;
+        font-family: "Dosis", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        color: var(--text-color); 
+}
+
+#info {
+    width: 100%;
+    margin-top: 5vh; /* espace au-dessus si tu veux */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* pour centrer le texte */
+}
+
+#info > p >a{
+    color: white;
+    font-size: x-large;
+    line-height: 1.2;
+    font-style: bolder;
+    margin: 0%;
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+
+
