@@ -83,9 +83,10 @@ portfolio/
 ## 🖼️ Screenshots
 
 - Home: 
-<img src=../HomeScreen.png alt="HomeScreen"/>
+<img src= HomeScreen.png alt="HomeScreen"/>
 
-- Gallery: `public/preview-gallery.png`
+- Gallery:
+<img src= GalleryScreen.png alt="GalleryScreen"/>
 
 
 ## 🤝 Contributing
