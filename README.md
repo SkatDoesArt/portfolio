@@ -84,11 +84,11 @@ portfolio/
 
 Add screenshots to help visitors preview your site.
 
-- Home: `public/preview-home.png`
+- Home: `public/HomeScreen.png`
 - Gallery: `public/preview-gallery.png`
 
 ```
-![Home](public/preview-home.png)
+![Home](public/HomeScreen.png)
 ![Gallery](public/preview-gallery.png)
 ```
 
