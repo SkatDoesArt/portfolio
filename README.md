@@ -82,15 +82,11 @@ portfolio/
 
 ## 🖼️ Screenshots
 
-Add screenshots to help visitors preview your site.
+- Home: 
+<img src=../HomeScreen.png alt="HomeScreen"/>
 
-- Home: `public/HomeScreen.png`
 - Gallery: `public/preview-gallery.png`
 
-```
-![Home](public/HomeScreen.png)
-![Gallery](public/preview-gallery.png)
-```
 
 ## 🤝 Contributing
 
